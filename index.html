@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- box icons -->
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- header design -->
+
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+
+
+    <nav class="navbar">
+      <a href="#home" class="active">home</a>
+      <a href="#about">about</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <!-- home section design -->
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Jitesh Gavit</h1>
+      <h3><span class="multiple-text"></span></h3>
+      <p>This is a space where you can learn more about me, my skills, and the projects I've worked on.</p>
+      <div class="social-media">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="#"><i class='bx bxl-linkedin'></i></a>
+      </div>
+      
+
+    </div>
+
+    <div class="home-img">
+      <img src="images/home.png" alt="">
+    </div>
+  </section>
+
+  <!-- about section design -->
+
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Frontend Developer!</h3>
+      <p>Hello! I'm Jitesh Gavit, a web developer passionate about creating dynamic and user-friendly websites. 
+        I specialize in front-end development and love working with modern web technologies.</p>
+      <a href="#" class="btn">More About Me</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+
+  <section class="skills" id="skills">
+    <div class="heading">
+        <h2>Skills</h2>
+    </div>
+    <div class="skills-container">
+        <div class="skill">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/HTML5_logo.svg/1280px-HTML5_logo.svg" alt="HTML5">        
+            <h3>HTML5</h3>
+            <div class="progress-bar html">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS" class="skill-icon" />
+            <h3>CSS3</h3>
+            <div class="progress-bar css">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript" class="skill-icon" />
+            <h3>JavaScript</h3>
+            <div class="progress-bar js">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="ReactJS" class="skill-icon" />
+            <h3>ReactJS</h3>
+            <div class="progress-bar react">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- portfolio section design -->
+
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="images/portfolio1.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Crypto Tracker</h4>
+          <p>CryptoTracker is a live crypto tracker to compare and view the top 100 cryptocurrencies with real-time
+            data on prices, volumes, market cap, and more.</p>
+          <a href="crypto-tracker-ten-bay.vercel.app"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+
+      <div class="portfolio-box">
+        <img src="images/portfolio2.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Paste App</h4>
+          <p>A CRUD Paste App allows users to create, read, update, and delete text snippets for easy storage and management of notes or code.</p>
+          <a href="paste-app-khaki.vercel.app"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      
+
+      <div class="portfolio-box">
+        <img src="images/portfolio3.jpg" alt="">
+        <div class="portfolio-layer">
+          <h4>Simon-Says-Game</h4>
+          <p>A Simon Says Game is a memory-based game where players must repeat a sequence of colors or sounds in the correct order.</p>
+          <a href="simon-says-game-opal.vercel.app"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- contact section design -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <form id="contactForm" action="#">
+        <div class="input-box">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email Address">
+        </div>
+        <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+<!-- Back to Top button -->
+<button id="backToTop" class="back-to-top-btn">↑Top</button>
+
+  <!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- typed js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- custom js -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
